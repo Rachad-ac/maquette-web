@@ -42,7 +42,7 @@ body .contenair{
 }
 
 .contenair header .nav .contact .left span {
-    margin: 10px;
+    margin: 10px 5px;
     color: red;
 }
 
@@ -50,7 +50,7 @@ body .contenair{
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    width: 20%;
+    width: 15%;
 }
 
 .contenair header .nav .contact .rigth p{
@@ -86,11 +86,16 @@ body .contenair{
     margin: 5px;
     padding-right: 5px;
     font-size: 12px;
+    position: relative;
 }
 
 .contenair header .nav .nav-bar .menu li a {
     text-decoration: none;
     color: black;
+
+    span i {
+        font-size: x-small;
+    }
 }
 
 .contenair header .nav .nav-bar .menu li a:hover{
@@ -99,7 +104,37 @@ body .contenair{
 
 .contenair header .nav .nav-bar .menu li a span{
     margin-left: 5px;
-    transform: rotate(45deg);
+}
+
+.contenair header .nav .nav-bar .menu li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.contenair header .nav .nav-bar .menu li .submenu li a {
+  padding: 8px 15px;
+  display: block;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+
+.contenair header .nav .nav-bar .menu li .submenu li a:hover {
+  background-color: #eee;
+  color: red;
+}
+
+.contenair header .nav .nav-bar .menu li:hover .submenu {
+  display: block;
 }
 
 .contenair header .nav .nav-bar .menu .btn-shop {
@@ -147,6 +182,7 @@ body .contenair{
     padding-top: 60px;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
 }
 
 .contenair header .home h1 {
@@ -160,6 +196,7 @@ body .contenair{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-weight: 600;
+    letter-spacing: normal;
 }
 
 .contenair header .home p {
@@ -181,6 +218,7 @@ body .contenair{
     color: white;
     text-decoration: none;
     font-size: x-small;
+    font-weight: 600;
 }
 
 .contenair main .section-1 {
@@ -1105,24 +1143,26 @@ body .contenair{
         }
 
         .input {
-            width: 40%;
-            height: 35px;
-            border: #3CB371 solid;
-            border-radius: 3px;
-            border-width: 0.06cm;
+            width: 40vw;
+            height: 45px;
+            margin: 0;
+            display: flex;
 
             input[type = "email"] {
                 width: 75%;
                 height: 100%;
-                border: none;
+                border: #3CB371 solid;
+                border-width: 0.06cm;
+                border-radius: 3px 0 0 3px;
+                border-right: none;
                 outline: none;
                 background: transparent;
-                margin-left: 10px;
-                font-size: x-small;
+                font-size: small;
+                padding-left: 10px;
             }
 
             input[type = "submit"] {
-                width: 22%;
+                width: 25%;
                 height: 100%; 
                 background-color: #f94144;
                 border: none;
@@ -1130,6 +1170,7 @@ body .contenair{
                 font-size: x-small;
                 font-weight: 600;
                 color: white;
+                border-radius: 0 3px 3px 0;
             }
         } 
     }
@@ -1194,6 +1235,11 @@ body .contenair{
                 height: 100%;
                 object-fit: cover;
             }
+        }
+
+        .links p a {
+            color: white;
+            text-decoration: none;
         }
 
     }
