@@ -61,16 +61,20 @@ body .contenair{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5px 0;
+    margin:  0;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .contenair header .nav .nav-bar .logo {
-    width: 30%;
+    width: 30vh;
+    height: 10vh;
+    margin: 5px 0;
+    padding: 5px 0;
 }
 
-.contenair header .nav .nav-bar .logo span {
-    font-size: 12px;
+.contenair header .nav .nav-bar .logo img{
+    width: 80%;
+    height: 90%;
 }
 
 .contenair header .nav .nav-bar .menu {
@@ -92,10 +96,10 @@ body .contenair{
 .contenair header .nav .nav-bar .menu li a {
     text-decoration: none;
     color: black;
+}
 
-    span i {
-        font-size: x-small;
-    }
+.contenair header .nav .nav-bar .menu li a span i {
+    font-size: x-small;
 }
 
 .contenair header .nav .nav-bar .menu li a:hover{
@@ -221,12 +225,17 @@ body .contenair{
     font-weight: 600;
 }
 
+.contenair main {
+    width: 100vw;
+    margin: 0;
+}
+
 .contenair main .section-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 20px;
+    margin: 40px 0;
     padding: 20px 30px;
 }
 
@@ -254,44 +263,59 @@ body .contenair{
 }
 
 .contenair main .section-1 .text .t-rigth {
-    display: block;
     padding: 0 10px;
     margin: 0 5px;
     width: 50%;
     font-size: small;
+    align-items: center;
 }
 
-.contenair main .section-1 .text .t-rigth span {
-    display: block;
-    margin : 10px 0;
-    font-family: "Mea Culpa", cursive;
-    font-size: 2rem;
-    color: #f94144;
+.contenair main .section-1 .text .t-rigth div {
+    width: 10vw;
+    height: 10vh;
+    margin: 5px;
+}
+
+.contenair main .section-1 .text .t-rigth div img {
+    width: 100%;
+    height: 100%;
 }
 
 .contenair main .section-1 .containe-cards {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    width: 100vw;
+    height: 35vh;
+    padding: 5px 0;
 }
 
 .contenair main .section-1 .containe-cards .cards {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
 }
 
 .contenair main .section-1 .containe-cards h3 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
 }
 
 .contenair main .section-1 .containe-cards .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #e9f1d9;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px;
+    width: 13vw;
+    height: 20vh;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
 }
@@ -305,31 +329,6 @@ body .contenair{
     margin-bottom: 10px;
 }
 
-.contenair main .section-1 .containe-cards {
-    display: flex;
-    flex-direction: column;
-}
-
-.contenair main .section-1 .containe-cards h3 {
-    grid-column: 1 / -1; 
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.contenair main .section-1 .containe-cards .card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
-    width: 50%;
-}
-
-.contenair main .section-1 .containe-cards .card:hover {
-    transform: translateY(-5px);
-}
-
 .contenair main .section-1 .containe-cards .cards .card p {
     font-size: small;
     font-weight: 300;
@@ -340,7 +339,8 @@ body .contenair{
 .contenair main .section-2 {
     display: flex;
     position: relative;
-    margin: 20px 75px 110px 75px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     padding: 10px;
     height: 70vh;
 }
@@ -398,13 +398,13 @@ body .contenair{
 
 .contenair main .section-2 .card-rigth {
     position: absolute;
-    left: 50%;         
+    left: 55%;         
     bottom: -60px;         
     transform: translateX(-50%); 
     width: 50%;
     margin: 0; 
     padding: 10px; 
-    z-index: 0;       
+    z-index: 0; 
 }
 
 .contenair main .section-2 .card-rigth .img {
@@ -438,7 +438,7 @@ body .contenair{
 .contenair main .section-2 .card-rigth div .title {
     position: absolute;
     top: -90px;        
-    right: -200px;     
+    right: -150px;     
     padding: 5px 0;
     margin: 0;
     z-index: 1;
@@ -456,6 +456,7 @@ body .contenair{
 
 .contenair main .section-3 {
     background-color: #e9f1d9;
+    margin-top: 100px;
     margin: 50px 0;
     padding: 40px 20px;
     display: flex;
@@ -482,18 +483,25 @@ body .contenair{
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    width: 80%;
+    width: 50%;
 }
 
 .contenair main .section-3 .items .item {
     display: flex;
-    gap: 20px;
-    margin: 20px;
+    gap: 10px;
+    margin: 10px;
     align-items: center;
 }
 
 .contenair main .section-3 .items .item span {
-    font-size: 30px;
+    width: 3vw;
+    height: 7vh;
+}
+
+.contenair main .section-3 .items .item span img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
 }
 
 .contenair main .section-3 .items .item p {
@@ -501,7 +509,9 @@ body .contenair{
 }
 
 .contenair main .section-3 .items .item p span {
+    font-size: 30px;
     font-weight: bold;
+    margin-top: 0;
     color: black;
 }
 
@@ -510,9 +520,9 @@ body .contenair{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-    margin: 10px 0;
-    height: auto;
+    padding: 5px 0;
+    margin: 70px 0;
+    height: 100vh;
 }
 
 .contenair main .section-4 .p {
@@ -533,18 +543,19 @@ body .contenair{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    height: 70vh;
+    height: 100%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
 .contenair main .section-4 .articles .article {
-    width: 300px;
-    height: 50%;
+    width: 25vw;
+    height: 100%;
 }
 
 .contenair main .section-4 .articles .article .img {
     width: 100%;
-    height: 35vh;
+    height: 50%;
 }
 
 .contenair main .section-4 .articles .article .img img {
@@ -555,6 +566,7 @@ body .contenair{
 }
 
 .contenair main .section-4 .articles .article .details {
+    height: 50%;
     padding: 20px;
     border: #F5F5F5 solid;
     border-width: 0.2cm;
@@ -621,7 +633,7 @@ body .contenair{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background : url(./libs/header_2.webp);
+    background : url(./libs/header_2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -771,27 +783,25 @@ body .contenair{
 
 .contenair main .section-7 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 15px;
     background-color: #e9f1d9;
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     margin: 20px 0;
-    padding: 20px 50px;
+    gap: 70px;
 }
 
 .contenair main .section-7 div {
-    height: 20vh;
-    width: 15vw;
+    height: 10vh;
+    width: 10vw;
 }
 
 .contenair main .section-7 div img {
-    width: 80%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .contenair main .section-8 {
@@ -809,17 +819,19 @@ body .contenair{
     flex-direction: column;
     margin-left: 20px;
     width: 40%;
-    .l {
-        letter-spacing: 2px;
-    }
+}
+
+.contenair main .section-8 .div-l .l {
+    letter-spacing: 2px;
 }
 
 .contenair main .section-8 .div-l h6 {
     font-size: 1.5rem;
     margin-top: 10px;
-    span {
-        font-weight: 400;
-    }
+}
+
+.contenair main .section-8 .div-l h6 span {
+    font-weight: 400;
 }
 
 .contenair main .section-8 .div-l .btn-event {
@@ -831,11 +843,11 @@ body .contenair{
     font-weight: 600;
     background-color: #3CB371;
     width: 20%;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+.contenair main .section-8 .div-l .btn-event a {
+    text-decoration: none;
+    color: white;
 }
 
 .contenair main .section-8 .div-r {
@@ -856,144 +868,163 @@ body .contenair{
     display: flex;
     gap: 20px;
     width: 100%;
+}
 
-    .img {
-        width: 10vw;
-        height: 20vh;
+.contenair main .section-8 .div-r .events .event .img {
+    width: 10vw;
+    height: 20vh;
+}
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 3px;
-        }
-    }
+.contenair main .section-8 .div-r .events .event .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        font-size: x-small;
-        justify-content: center;
+.contenair main .section-8 .div-r .events .event .info {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+    justify-content: center;
+}
 
-        p .titre {
-            font-size: 16px;
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
+.contenair main .section-8 .div-r .events .event .info p .titre {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
 
-        .date {
-            display: flex;
-            gap: 40px;
+.contenair main .section-8 .div-r .events .event .date {
+    display: flex;
+    gap: 40px;
+}
 
-            .bar {
-                border-right: #333 solid;
-                padding-right: 40px;
-                border-width: 1.5px;
-            }
+.contenair main .section-8 .div-r .events .event .date .bar {
+    border-right: #333 solid;
+    padding-right: 40px;
+    border-width: 1.5px;
+}
 
-            span {
-                color: red;
-            }
-        }
-    }
+.contenair main .section-8 .div-r .events .event .date span {
+    color: red;
 }
 
 .contenair main .section-9 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: url(./libs/client.png);
+    background: url(./libs/client.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 80vh;
     margin: 30px 0;
+}
 
-    div {
-        margin-left: 100px;
-        padding-left: 50px;
-    }
-    
-    div span {
-        letter-spacing: 2px;
-    }
+.contenair main .section-9 div {
+    margin-left: 100px;
+    padding-left: 50px;
+}
 
-    div h6 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        span {
-            font-weight: 500;
-            letter-spacing: normal;
-        }
-    }
+.contenair main .section-9 div span {
+    letter-spacing: 2px;
+}
 
-    div .slog {
-        display: flex;
-        width: 70%;
-        margin-bottom: 10px;
-        margin-top: 40px;
+.contenair main .section-9 div h6 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
-        p {
-            overflow: hidden;
-            font-size: small;
-            display: flex;
+.contenair main .section-9 div h6  span {
+    font-weight: 500;
+    letter-spacing: normal;
+}
 
-            i {
-                font-size: 2.5rem;
-                color: #cff67a;
-                margin-right: 10px;
-            }
-        }
+.contenair main .section-9 div .slog {
+    display: flex;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
 
-        .btn-next {
-            display: flex;
-            gap: 5px;
+.contenair main .section-9 div .slog p {
+    overflow: hidden;
+    font-size: small;
+    display: flex;
+}
 
-            button {
-                padding: 0 10px;
-                height: 40px;
-                align-items: center;
-                color: white;
-                background-color: #3CB371;
-                border: none;
-                border-radius: 3px;
-                cursor: pointer;
+.contenair main .section-9 div .slog p i {
+    font-size: 2.5rem;
+    color: #cff67a;
+    margin-right: 10px;
+}
 
-                i {
-                    font-size: x-small;
-                }
-            }
-        }
-    }
+.contenair main .section-9 div .slog p i {
+    font-size: 2.5rem;
+    color: #cff67a;
+    margin-right: 10px;
+}
 
-    div .profil {
-        display: flex;
-        gap: 10px;
-        margin-left: 35px;
+.contenair main .section-9 div .slog .btn-next {
+    display: flex;
+    gap: 5px;
+}
 
-        .img {
-            width: 90px;
-            height: 40px;
+.contenair main .section-9 div .slog .btn-next button {
+    padding: 0 10px;
+    height: 40px;
+    align-items: center;
+    color: white;
+    background-color: #3CB371;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;    
+}
 
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-            }
-        }
+.contenair main .section-9 div .slog .btn-next button {
+    padding: 0 10px;
+    height: 40px;
+    align-items: center;
+    color: white;
+    background-color: #3CB371;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; 
+}
 
-        p {
-            font-size: small;
-            font-weight: 500;
+.contenair main .section-9 div .slog .btn-next button i {
+    font-size: x-small;
+}
 
-            span {
-                font-size: x-small;
-                color: red;
-            }
-        }
-    }
+.contenair main .section-9 div .profil {
+    display: flex;
+    gap: 10px;
+    margin-left: 35px;
+}
+
+.contenair main .section-9 div .profil .img {
+    width: 90px;
+    height: 40px;
+}
+
+.contenair main .section-9 div .profil .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contenair main .section-9 div .profil p {
+    font-size: small;
+    font-weight: 500;
+}
+
+.contenair main .section-9 div .profil p span {
+    font-size: x-small;
+    color: red;
 }
 
 .contenair main .section-10 {
@@ -1005,118 +1036,126 @@ body .contenair{
     margin: 40px 0;
     padding: 20px 0;
 
-    .top {
-        padding: 10px;
-        text-align: center;
+}
 
-        span {
-            letter-spacing: 2px;
-        }
+.contenair main .section-10 .top {
+    padding: 10px;
+    text-align: center;
+}
 
-        h6 {
-            font-size: 30px;
-            
-            span {
-                font-weight: 400;
-                letter-spacing: normal;
-            }
-        }
-    }
+.contenair main .section-10 .top span {
+    letter-spacing: 2px;
+}
 
-    .news {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-        gap: 20px;
+.contenair main .section-10 .top h6 {
+    font-size: 30px;
+}
 
-        .new {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            width: 20vw;
+.contenair main .section-10 .top h6 span {
+    font-weight: 400;
+    letter-spacing: normal;
+}
 
-            .img {
-                width: 100%;
-                height: 30vh;
-                margin-bottom: 10px;
+.contenair main .section-10 .news {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 3px;
-                }
-            }
+.contenair main .section-10 .news .new {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20vw;
+}
 
-            .div {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
+.contenair main .section-10 .news .new .img {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
 
-                .sms{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    gap: 10px;
-                    font-size: x-small;
-                    color: red;
-                    padding: 5px; 
-                }
+.contenair main .section-10 .news .new .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
 
-                h6 {
-                    width: 80%;
-                    margin-bottom: 5px;
-                    font-size: 13px;
-                    font-weight: 500;
-                } 
-            }
+.contenair main .section-10 .news .new .div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
-            .bottom {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                padding: 4px;
+.contenair main .section-10 .news .new .div .sms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: x-small;
+    color: red;
+    padding: 5px; 
+}
 
-                .cercle {
-                    display: flex;
-                    align-items: center;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 50%;
-                    }
-                }
+.contenair main .section-10 .news .new .div h6 {
+    width: 80%;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 500;
+} 
 
-                span {
-                    font-size: x-small;
-                }
-                    
-            }
-        }
-    }
+.contenair main .section-10 .news .new .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;                
+}
 
-    .btn-new {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 3px;
-        background-color: #3CB371;
+.contenair main .section-10 .news .new .bottom .cercle {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;                  
+}
 
-        a {
-            text-decoration: none;
-            font-size: 10px;
-            font-weight: 600;
-            color: white;
-        }
-    }
+.contenair main .section-10 .news .new .bottom .cercle {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;                
+}
+
+.contenair main .section-10 .news .new .bottom .cercle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contenair main .section-10 .news .new .bottom span {
+    font-size: x-small;
+}
+
+.contenair main .section-10 .btn-new {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3CB371;
+}
+
+.contenair main .section-10 .btn-new a {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
 }
 
 .contenair footer {
@@ -1125,133 +1164,954 @@ body .contenair{
     flex-direction: column;
     width: 100%;
     margin-top: 20px;
+}
 
-    .section-top {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 10px;
-        background-color: #eff9df;
-        height: 30vh;
+.contenair footer .section-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #eff9df;
+    height: 10rem; 
+}
 
-        h6 {
-            font-size: 1.5rem;
+.contenair footer .section-top h6 {
+    font-size: 1.5rem; 
+}
 
-            span {
-                font-weight: 400;
-            } 
-        }
+.contenair footer .section-top h6 span {
+    font-weight: 400;
+}
 
-        .input {
-            width: 40vw;
-            height: 45px;
-            margin: 0;
-            display: flex;
+.contenair footer .section-top .input {
+    width: 35em;
+    height: 45px;
+    margin: 0;
+    display: flex;
+}
 
-            input[type = "email"] {
-                width: 75%;
-                height: 100%;
-                border: #3CB371 solid;
-                border-width: 0.06cm;
-                border-radius: 3px 0 0 3px;
-                border-right: none;
-                outline: none;
-                background: transparent;
-                font-size: small;
-                padding-left: 10px;
-            }
+.contenair footer .section-top .input input[type = "email"] {
+    width: 75%;
+    height: 100%;
+    border: #3CB371 solid;
+    border-width: 0.06cm;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    font-size: small;
+    padding-left: 10px;
+}
 
-            input[type = "submit"] {
-                width: 25%;
-                height: 100%; 
-                background-color: #f94144;
-                border: none;
-                cursor: pointer;
-                font-size: x-small;
-                font-weight: 600;
-                color: white;
-                border-radius: 0 3px 3px 0;
-            }
-        } 
+.contenair footer .section-top .input input[type = "submit"] {
+    width: 25%;
+    height: 100%; 
+    background-color: #f94144;
+    border: none;
+    cursor: pointer;
+    font-size: x-small;
+    font-weight: 600;
+    color: white;
+    border-radius: 0 3px 3px 0;
+}
+
+.contenair footer .section-bottom {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3CB371;
+    padding: 40px;
+    height: 20rem;
+}
+
+.contenair footer .section-bottom div {
+    width: 16%;
+    height: 10rem;
+    color: white;
+    padding: 5px 0;
+}
+
+.contenair footer .section-bottom div h6 {
+    font-size: 0.8rem;
+}
+
+.contenair footer .section-bottom div p {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.contenair footer .section-bottom  .infos a {
+    font-size: x-small;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: white solid;
+    padding-bottom: 3px;
+    color: white;
+}
+
+.contenair footer .section-bottom  .contact-us button {
+    padding: 5px 10px;
+    background-color: #f94144;
+    border: none;
+    border-radius: 3px;
+}
+
+.contenair footer .section-bottom  .contact-us button a {
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: 600;
+    color: white;
+}
+
+.contenair footer .section-bottom .high .f-img {
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    gap: 6px;
+    height: 10rem;
+    width: 15rem;
+    padding: 5px 0 0 0;
+}
+
+.contenair footer .section-bottom .high .f-img img {
+    width: 30%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.contenair footer .section-bottom .links p a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenair footer .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenair footer .copy p {
+    font-size: small;
+}
+
+
+ @media (max-width: 768px) {
+
+    body .contenair {
+        width: 100vw;
     }
 
-    .section-bottom {
-        display: flex;
-        gap: 50px;
+    .contenair header {
+        flex-direction: column;
+    }
+
+    .contenair header .nav {
+        flex-direction: column;
+    }
+
+    .contenair header .nav .contact {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .contenair header .nav .contact .left{
+        width:100%;
         justify-content: center;
         align-items: center;
-        background-color: #3CB371;
-        padding: 40px;
+        height: 50%;
+    }
+
+    .contenair header .nav .contact .rigth {
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 50%;
+    }
+
+    .contenair header .nav .nav-bar {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contenair header .nav .nav-bar .menu {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contenair header .nav .nav-bar .menu li a {
+        font-size: x-small;
+        font-weight: 500;
+    }
+    
+    .contenair header .nav .nav-bar .menu .btn-shop {
+        padding: 10px;
+    }
+
+    .contenair header .nav .nav-bar .menu .btn-shop i {
+        font-size: x-small;
+    }
+
+    .contenair main {
+        flex-direction: column;
+    }
+
+    .contenair main .section-1 .text .t-left {
+        font-size: 1.3rem;
+    }
+
+     .contenair main .section-1 .text  .t-rigth {
+        font-size: x-small;
+     }
+
+    .contenair main .section-1 .containe-cards .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenair main .section-2 {
+        margin: 0;
+        flex-direction: column;
+        width: 150vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenair main .section-2 .card-left {
         height: 60vh;
-
-        .infos , .contact-us , .links , .high {
-            width: 16%;
-            height: 35vh;
-            color: white;
-            padding: 10px;
-
-            h6 {
-                font-size: 0.8rem;
-            }
-
-            p {
-                font-size: x-small;
-                font-weight: 400;
-                margin: 10px 0;
-            }
-        }
-
-        .infos a {
-            font-size: x-small;
-            font-weight: 600;
-            text-decoration: none;
-            border-bottom: white solid;
-            padding-bottom: 3px;
-            color: white;
-        }
-
-        .contact-us button {
-            padding: 5px 10px;
-            background-color: #f94144;
-            border: none;
-            border-radius: 3px;
-
-            a {
-                text-decoration: none;
-                font-size: x-small;
-                font-weight: 600;
-                color: white;
-            }
-        }
-
-        .high .f-img {
-            margin-top: 15px;
-            background-color: #cff67a;
-            height: 23vh;
-            width: 17vw;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        .links p a {
-            color: white;
-            text-decoration: none;
-        }
-
+        left: 5%;         
+        bottom: 35px;
     }
 
-    .copy {
+    .contenair main .section-2 .card-left h3 {
+        font-size: 1rem;
+    }
+
+    .contenair main .section-2 .card-left div button {
+        padding: 8px;
+        font-size: 0.5rem;
+    }
+
+    .contenair main .section-2 .card-left p {
+        font-size: x-small;
+    }
+
+    .contenair main .section-2 .card-rigth .img {
+        width: 400px;
+        height: 300px;
+        top: -30px;        
+        right: -40px;
+    }
+
+    .contenair main .section-2 .card-rigth div .title {
+        top: -100px;        
+        right: -35px;
+    }
+
+    .contenair main .section-2 .card-rigth div .title h3 {
+        font-size: 1.5rem;
+    }
+
+    .contenair main .section-3 {
+        flex-direction: column;
+        height: 50vh;
+        margin: 70px 0;
+        padding-left: 0;
+    }
+
+    .contenair main .section-3 div h4 , 
+    .contenair main .section-3 div p {
+        text-align: center;
+    }
+
+    .contenair main .section-3 .items{
+        margin-left: 0;
+        padding-left: 0;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .contenair main .section-3 .items .item p ,
+    .contenair main .section-3 div p {
+        font-size: x-small;
+    }
+
+    .contenair main .section-3 .items .item span {
+        width: 4vw;
+        height: 6vh;
+    }
+
+
+    .contenair main .section-4{
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contenair main .section-3 div h4,
+    .contenair main .section-3 .items .item p span,
+    .contenair main .section-4 h4,
+    .contenair main .section-6 h5  {
+        font-size: 1.4rem;
+    }
+
+    .contenair main .section-4 .articles {
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contenair main .section-4 .articles .article {
+        width: 28vw;
+    }
+
+    .contenair main .section-4 .articles .article .img{
+        height: 30%;
+    }
+    .contenair main .section-4 .articles .article .details {
+        height: 40%;
+    }
+
+    .contenair main .section-4 .articles .article .details h6 {
+        font-size: 0.8rem;
+    }
+
+    .contenair main .section-4 .articles .article .details span ,
+    .contenair main .section-4 .articles .article .details .price p {
+        font-size: xx-small;
+    }
+
+    .contenair main .section-4 .articles .article .details .price p span {
+        font-size: 1.2rem;
+    }
+
+    .contenair main .section-5 .btn-action {
+        width: 40vw;
+    }
+
+    .contenair main .section-6 {
+        margin-bottom: 0;
+    }
+
+    .contenair main .section-6 .produits {
+        flex-wrap: wrap;
+    }
+
+    .contenair main .section-6 .produits .produit {
+        width: 20vw;
+    }
+
+    .contenair main .section-6 .produits .produit .img {
+        height: 40%;
+    }
+
+    .contenair main .section-7 {
+        gap: 50px;
+        width: 100%;
+    }
+
+    .contenair main .section-8{
+        padding-left: 10px;
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .contenair main .section-8 .div-l .btn-event {
+        width: 30%;
+    }
+
+    .contenair main .section-8 .div-r .events {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .contenair main .section-8 .div-r .events .event .img {
+        width: 10vw;
+        height: 15vh;
+    }
+
+    .contenair main .section-8 .div-r .events .event .info p .titre {
+        font-size: 13px;
+    }
+
+    .contenair main .section-8 .div-r .events .event .info .date{
+        font-size: xx-small;
+    }
+
+    .contenair main .section-9{
+        height: 60vh;
+    }
+
+    .contenair main .section-9 div {
+        padding-left: 0;
+        margin-left: 60px;
+    }
+
+     .contenair main .section-9 div div h6 {
+        font-size: 1.3rem;
+    }
+
+    .contenair main .section-9 div .slog p {
+        font-size: x-small;
+    }
+
+    
+    .contenair main .section-9 div .profil {
+        margin-left: 20px;
+        width: 70%;
+    }
+
+     .contenair main .section-9 div .profil .img {
+        width: 5vw;
+     }
+
+     .contenair main .section-10 .top h6 {
+        font-size: 1.4rem;
+     }
+
+     .contenair main .section-10 .news {
+        gap: 20px;
+        padding-left: 0;
+     }
+
+    .contenair main .section-10 .news .new {
+        width: 28%;
+    }
+
+    .contenair main .section-10 .news .new .img {
+        height: 50%;
+    }
+
+    .contenair main .section-10 .news .new .div h6 {
+        font-size: 0.8rem;
+    }
+
+    .contenair footer .section-top {
+        justify-content: center;
+        padding-left: 80px;
+        gap: 80px;
+    }
+
+    .contenair footer .section-top .input{
+        height: 6vh;
+    }
+
+    .contenair footer .section-top .input input[type = "email"] {
+        width: 50%;
+        font-size: x-small;
+    }
+
+    .contenair footer .section-top h6 {
+        font-size: 1.2rem;
+    }
+
+    .contenair footer .section-top .input input[type = "submit"] {
+        width: 20%;
+    }
+
+    .contenair footer .section-bottom{
+        gap: 30px;
+        padding : 5px;
+    }
+
+    .contenair footer .section-bottom .high .f-img{
+        width: 10rem;
+        height: 8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body .contenair {
+        height: 100%;
+        font-size: 14px;
+    }
+    
+    .contenair header {
+        height: 90vh;
+    }
+    
+    .contenair header .nav .contact {
+        font-size: x-small;
+    }
+    
+    .contenair header .nav .contact .left span {
+        margin: 5px 2px;
+    }
+    
+    .contenair header .nav .nav-bar .logo {
+        width: 20vh;
+        height: 8vh;
+    }
+
+    .contenair header .nav .nav-bar .menu {
+        padding: 0 20px 10px 10px;
+    }
+    
+    .contenair header .nav .nav-bar .menu li a {
+        font-size: xx-small;
+        font-weight: 500;
+        gap: 0;
+    }
+    
+    .contenair header .nav .nav-bar .menu .btn-shop {
+        padding: 10px;
+        margin: 0 5px;
+        font-size: 10px;
+    }
+    
+    .contenair header .home span {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    
+    .contenair header .home h1 {
+        font-size: 1.3rem;
+    }
+    
+    .contenair header .home h1 span {
+        font-size: 1.3rem;
+    }
+    
+    .contenair header .home p {
+        width: 95%;
+        font-size: 10px;
+        margin: 20px 0;
+    }
+    
+    .contenair header .home .btn-now {
+        padding: 6px 12px;
+        margin-bottom: 40px;
+    }
+
+     .contenair header .home .btn-now a {
+         font-size: 8px;
+     }
+    
+    .contenair main .section-1 {
+
+        margin: 15px 0;
+        padding: 5px;
+        min-height: 40rem;
+    }
+    
+    .contenair main .section-1 .text .t-left {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .contenair main .section-1 .text .t-rigth div {
+        width: 20vw;
+        height: 60%;
+    }
+
+    .contenair main .section-1 .containe-cards {
+        width: 100vw;
+        height: 85vh;
+    }
+    
+    .contenair main .section-1 .containe-cards h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contenair main .section-1 .containe-cards .cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .contenair main .section-1 .containe-cards .cards .card {
+        padding: 15px;
+        min-width: 10rem;
+        max-width: 15rem;
+    }
+    
+    .contenair main .section-2 {
+        margin: 20px 0;
+        padding: 10px;
+        width: 100vw;
+    }
+    
+    .contenair main .section-2 .card-left {
+        height: 19rem;
+        width: 12rem;
+        padding: 5px;
+        margin-bottom: 15px;
+        top: 1px;
+        left: -50px;
+    }
+    
+    .contenair main .section-2 .card-left div {
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .contenair main .section-2 .card-left h3 {
+        font-size: 1rem;
+    }
+    
+    .contenair main .section-2 .card-rigth {
+        left: 55%;         
+        bottom: -0px;         
+        transform: translateX(-50%);
+    }
+
+    .contenair main .section-2 .card-rigth .img {
+        height: 250px;
+        width: 260px;
+    }
+    
+    .contenair main .section-2 .card-rigth .img .play {
+        right: 50px;
+        bottom: 50px;
+        padding: 10px 12px;
+    }
+
+    .contenair main .section-2 .card-rigth div .title {
+        top: -100px;        
+        right: -70px; 
+    }
+    
+    .contenair main .section-2 .card-rigth div .title h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contenair main .section-3 {
+        padding: 10px 5px;
+    }
+    
+    .contenair main .section-3 div h4 {
+        font-size: 1rem;
+    }
+    
+    .contenair main .section-3 .items .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contenair main .section-3 .items .item span {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .contenair main .section-3 .items .item p,
+    .contenair main .section-3 div p {
+        font-size: xx-small;
+    }
+
+    .contenair main .section-3 .items .item p span {
+        font-size: larger;
+    }
+
+     .contenair main .section-4 {
+        margin-top: 0;
+        padding-top: 0;
+        height: 65rem;
+        margin-bottom: 60px;
+     }
+    
+    .contenair main .section-4 h4 {
+        font-size: 1.3rem;
+    }
+
+    .contenair main .section-4 .articles{
+        gap: 10px;
+    }
+    
+    .contenair main .section-4 .articles .article {
+        flex-direction: column;
+        width: 50%;
+        height: 20rem;
+        gap: 0;
+        margin: 0;
+    }
+    
+    .contenair main .section-4 .articles .article .img {
+        height: 25vh;
+    }
+    
+    .contenair main .section-4 .articles .article .details {
+        padding: 15px;
+        height: auto;
+    }
+    
+    .contenair main .section-5 {
+        height: 60vh;
+        padding: 10px;
+    }
+    
+    .contenair main .section-5 h5 {
+        font-size: 1.5rem;
+        width: 95%;
+    }
+
+    .contenair main .section-5 p {
+        font-size: x-small;
+    }
+    
+    .contenair main .section-5 .btn-action {
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenair main .section-5 .btn-action .btn-1 a,
+    .contenair main .section-5 .btn-action .btn-2 a {
+        font-size: 0.4rem;
+        padding: 6px;
+    }
+
+     .contenair main .section-6{
+        height: 80rem;
+     }
+    
+    .contenair main .section-6 h5 {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    .contenair main .section-6 .produits{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .contenair main .section-6 .produits .produit {
+        width: 40vw;
+        gap: 0;
+        margin: 0;
+    }
+    
+    .contenair main .section-6 .produits .produit .img {
+        height: 30vh;
+    }
+    
+    .contenair main .section-7 {
+        height: auto;
+        padding: 40px 10px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contenair main .section-7 div {
+        width: 25vw;
+        height: 10vh;
+    }
+    
+    .contenair main .section-8 {
+        padding: 20px 0;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .contenair main .section-8 .div-l h6 {
+        font-size: 1.2rem;
+    }
+
+    .contenair main .section-8 .div-l {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        text-align: center;
+    }
+    
+    .contenair main .section-8 .div-l .btn-event {
+        width: 50%;
+        font-size: 8px;
+    }
 
-        p {
-            font-size: small;
-        }
+    .contenair main .section-8 .div-r .events {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contenair main .section-8 .div-r .events .event {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+    }
+    
+    .contenair main .section-8 .div-r .events .event .img {
+        width: 50vw;
+        height: 20vh;
+        padding: 0;
+    }
+
+    .contenair main .section-8 .div-r .events .event .info {
+        align-items: center;
+        width: 15rem;
+    }
+
+    .contenair main .section-8 .div-r .events .event .info p .titre {
+        font-size: small;
+    }
+    
+    .contenair main .section-8 .div-r .events .event .info .date {
+        font-size: xx-small;
+    }
+    
+    .contenair main .section-9 {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .contenair main .section-9 div{
+        margin-left: 40px;
+    }
+    
+    .contenair main .section-9 div h6 {
+        font-size: 1.2rem;
+    }
+    
+     .contenair main .section-9 div .slog{
+        margin: 0;
+        width: 80%;
+     }
+
+    .contenair main .section-9 div .slog p {
+        text-align: center;
+        margin-bottom: 15px;
+        width: 200rem;
+        margin: 5px;
+    }
+    
+    .contenair main .section-9 div .slog p i {
+        font-size: 2rem;
+        display: block;
+        margin: 10px;
+    }
+
+     .contenair main .section-9 div .profil {
+        align-items: center;
+     }
+    
+    .contenair main .section-9 div .profil .img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .contenair main .section-9 div .profil p {
+        font-size: x-small;
+    }
+
+    .contenair main .section-10{
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .contenair main .section-10 .top h6 {
+        font-size: 1.3rem;
+        flex-direction: column;
+    }
+
+     .contenair main .section-10 .news {
+        flex-direction: column;
+     }
+    
+    .contenair main .section-10 .news .new {
+        width: 50vw;
+        margin-bottom: 10px;
+    }
+    
+    .contenair main .section-10 .news .new .img {
+        height: 25vh;
+    }
+    
+    .contenair main .section-10 .news .new .div h6 {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .contenair main .section-10 .btn-new {
+        padding: 8px 10px;
+    }
+
+    .contenair main .section-10 .btn-new  a {
+        font-size: 8px;
+    }
+
+    .contenair footer .section-top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+    
+    .contenair footer .section-top h6 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .contenair footer .section-top .input {
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        margin: 0;
+    }
+    
+    .contenair footer .section-bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        gap: 10px;
+    }
+    
+    .contenair footer .section-bottom div {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contenair footer .section-bottom div h6 {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+    
+    .contenair footer .section-bottom div p {
+        font-size: 10px;
+    }
+    
+    .contenair footer .section-bottom .high .f-img {
+        justify-content: center;
+        height: 8rem;
+        width: 100%;
+    }
+    
+    .contenair footer .section-bottom .high .f-img img {
+        width: 45px;
+        height: 35px;
+        margin: 2px;
+    }
+    
+    .contenair footer .copy {
+        padding: 15px;
+    }
+    
+    .contenair footer .copy p {
+        font-size: x-small;
+        text-align: center;
     }
 }
+
+
+
+

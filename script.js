@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 ];
 
 const icone = [
-  {id: 1, icon: "fa-solid fa-clipboard-check", number: 5960, text: "Completed Projects"},
-  {id: 2, icon: "fa-solid fa-people-group", number: 3719, text: "People We Helped"},
-  {id: 3, icon: "fa-solid fa-award", number: 569, text: "Awards Achieved"}
+  {id: 1, icon: "./libs/ico_3.svg", number: 5960, text: "Completed Projects"},
+  {id: 2, icon: "./libs/ico_2.svg", number: 3719, text: "People We Helped"},
+  {id: 3, icon: "./libs/ico_1.svg", number: 569, text: "Awards Achieved"}
 ];
 
 const articles = [
@@ -44,7 +44,7 @@ const articles = [
 const produits = [
   {
     id: 1,
-    img: "./libs/produit_1.webp",
+    img: "./libs/produit_1.jpg",
     sale: true,
     title: "Reusable collection",
     oldPrice: "€15.00",
@@ -90,7 +90,7 @@ const news = [
             author: "By Bearsthems"
         },
         {
-            img: "./libs/new_2.png",
+            img: "./libs/new_2.jpg",
             date: "MAY 11, 2025",
             comments: 3,
             title: "Breaking Barriers : Empowering Women In Sports",
@@ -126,7 +126,7 @@ const news = [
   icone.forEach(item => {
     div.innerHTML += `
       <div class="item">
-        <span><i class="${item.icon}"></i></span>
+        <span><img src="${item.icon}" alt=""></span>
         <p><span>${item.number}</span><br>${item.text}</p>
       </div>
     `;
